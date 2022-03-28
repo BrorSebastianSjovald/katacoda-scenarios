@@ -7,20 +7,31 @@
     "steps": [
       {
         "title": "Introduction to testing",
-        "text": "introduction_to_testing.md"
+        "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Getting to know the app",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "The required functionality",
         "text": "step3.md"
+      },
+      {
+        "title": "Testing in React",
+        "text": "step4.md"
+      },
+      {
+        "title": "E2E testing with Puppeteer",
+        "text": "step5.md"
+      },
+      {
+        "title": "Automation with GitHub Actions",
+        "text": "step6.md"
       }
     ],
     "intro": {
-      "text": "intro.md",
-      "code": "foreground.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
