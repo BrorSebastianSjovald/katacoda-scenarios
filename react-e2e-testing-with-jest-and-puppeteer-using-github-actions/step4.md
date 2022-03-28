@@ -8,9 +8,9 @@ What is importante to mention as well is that there is a difference between havi
 We will now write some code to test the functionality of our TODO-list.
 
 ```
-test('test 2 buttons render', () => {
-    render(<App />)
-const buttons = screen.getAllByRole('button')
-expect(buttons).toHaveLength(2)
+test('Should render header', () => {
+    render(<InputPresenter/>);
+    const header = screen.getByText(/Shopping list/i);
+    expect(header).toBeInTheDocument();
 })
 ```
