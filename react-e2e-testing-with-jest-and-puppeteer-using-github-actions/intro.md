@@ -1,31 +1,28 @@
-# New Scenario Template (Your Title Here)
+## 
 
-This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
+## What you will learn:
 
-## Description
+- Write end-to-end tests
 
-2-3 sentences on what the scenario covers, illustrates, and teaches. What technology is used, and what task will the learner have accomplished by the end?
+- Automate E2E testing using GitHub Actions
 
-Importantly, why does this matter? What can this technology, tool, or approach help you accomplish? Briefly communicate the real-world application(s) of this skill.
+- Why end-to-end testing and automating is good for DevOps
 
-## Learning Objective
 
-- 3-4 bullets
-- of what you
-- will learn
+## Why is end-to-end(e2e) testing important?
 
-## Prerequisite Skills
 
-Define the target audience here, and list any prerequisite skills. For example:
+## The plan:
 
-This is for software developers with prior experience using Jenkins to deploy web applications.
+1. Introduction to testing
 
-## Table of Contents
+2. Getting to know the App
 
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
+3. The required functionality
 
-- Scenario A
-- Scenario B
-- Scenario C
+4. Testing in React
 
+5. E2E testing with Puppeteer
+
+6. 
 
