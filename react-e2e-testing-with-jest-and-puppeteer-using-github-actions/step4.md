@@ -7,10 +7,24 @@ What is importante to mention as well is that there is a difference between havi
 
 We will now write some code to test the functionality of our TODO-list.
 
+Let first write a simple test which tests if the page simply has the text "Shopping list" in it.
+
 ```
 test('Should render header', () => {
     render(<InputPresenter/>);
     const header = screen.getByText(/Shopping list/i);
     expect(header).toBeInTheDocument();
-})
+});
+```
+
+Now, lets write a test that checks if the items "Chocolate" and "Milk" is a part of the shopping list.
+
+```
+test("Default shopping list is correct", () => {
+  render(<InputPresenter />);
+  const elem1 = screen.getByText("Milk");
+  const elem2 = screen.getByText("Chocolate");
+  expect(elem1).toBeInTheDocument();
+  expect(elem2).toBeInTheDocument();
+});
 ```
