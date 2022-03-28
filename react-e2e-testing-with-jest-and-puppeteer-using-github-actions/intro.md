@@ -24,5 +24,5 @@
 
 5. E2E testing with Puppeteer
 
-6. 
+6. Automation with GitHub Actions
 
