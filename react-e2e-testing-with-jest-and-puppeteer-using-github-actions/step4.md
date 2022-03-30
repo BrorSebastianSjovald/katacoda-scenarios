@@ -17,7 +17,7 @@ This will run the application in your localhost on port 3000. Press the "Display
 ### Our first tests for the application
 
 We will now write some code to test the functionality of our TODO-list.
-Open `/root/react-e2e-testing/src/index.test.js`{{open}} or locate to this file in the terminal to see where all our of tests will be at.
+Open `./react-e2e-testing/src/index.test.js`{{open}} or locate to this file in the terminal to see where all our of tests will be at.
 As you can see, there is already a test here. It basically tests that the header "Shopping list" exists in your localhost 3000 as shown before. Lets add one more test!
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="append">
