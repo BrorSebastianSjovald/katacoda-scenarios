@@ -38,7 +38,8 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "dashboards": [{ "name": "Display port 3000", "port": 3000 }]
   },
   "backend": {
     "imageid": "ubuntu:2004"

@@ -10,7 +10,7 @@ Normally, the complexity of an application is much more advanced than in this ex
 
 ### Our first tests for the application
 
-If you yet haven't installed & run the application, do so by firstly run `npm install`{{execute}} followed by `npm start`{{execute}}.
+If you yet haven't installed & run the application, do so by firstly run `npm install react-e2e-testing/`{{execute}} followed by `npm start`{{execute}}.
 This will run the application in your localhost on port 3000. Press the "Display port 3000" in the terminal to see the app!
 
 We will now write some code to test the functionality of our TODO-list.
