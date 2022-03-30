@@ -36,4 +36,9 @@ Let's analyze this.
 - After the description of the test comes the anonomys function of the test
 - `render(<InputPresenter/>)` renders the InputPresenter our environment.
 - `screen.getByText("Milk")` is a function to find non-interactive elements with the specific text. Such elements could be divs and spans.
-- `expect(elem1).toBeInTheDocument()` checks if the element is in DOM Tree.
+- `expect(elem1).toBeInTheDocument()` checks if the element is in the DOM Tree.
+
+### Run the tests locally
+
+Cool! Now we have two basic tests for our application. Lets try and see if they pass!
+Run `npm test`{{execute}} and see the results!
