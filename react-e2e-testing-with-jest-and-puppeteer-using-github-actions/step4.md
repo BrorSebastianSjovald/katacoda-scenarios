@@ -17,13 +17,13 @@ This will run the application in your localhost on port 3000. Press the "Display
 We will now write some code to test the functionality of our TODO-list.
 Let first write a simple test which tests if the page simply has the text "Shopping list" in it.
 
-```
+<pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="insert"  data-marker="#TODO-E2E test">
 test('Should render header', () => {
     render(<InputPresenter/>);
     const header = screen.getByText(/Shopping list/i);
     expect(header).toBeInTheDocument();
 });
-```
+</pre>
 
 Now, lets write a test that checks if the items "Chocolate" and "Milk" is a part of the shopping list.
 
