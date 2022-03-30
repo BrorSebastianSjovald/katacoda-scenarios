@@ -17,12 +17,11 @@ This will run the application in your localhost on port 3000. Press the "Display
 ### Our first tests for the application
 
 We will now write some code to test the functionality of our TODO-list.
-Let first write a simple test which tests if the page simply has the text "Shopping list" in it. Open `/root/react-e2e-testing/src/index.test.js`{{open}} to see it!
-
+Open `/root/react-e2e-testing/src/index.test.js`{{open}} or locate to this file in the terminal to see where all our of tests will be at.
 As you can see, there is already a test here. It basically tests that the header "Shopping list" exists in your localhost 3000 as shown before. Lets add one more test!
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="append">
-test("Default shopping list is correct", () => {
+test("Milk & chocolate in shopping list", () => {
   render(<InputPresenter />);
   const elem1 = screen.getByText("Milk");
   const elem2 = screen.getByText("Chocolate");
@@ -31,14 +30,10 @@ test("Default shopping list is correct", () => {
 });
 </pre>
 
-Now, lets write a test that checks if the items "Chocolate" and "Milk" is a part of the shopping list.
+Let's analyze this.
 
-```
-test("Default shopping list is correct", () => {
-  render(<InputPresenter />);
-  const elem1 = screen.getByText("Milk");
-  const elem2 = screen.getByText("Chocolate");
-  expect(elem1).toBeInTheDocument();
-  expect(elem2).toBeInTheDocument();
-});
-```
+- test() defines a test, followed by a string describing what the test is all about. In our case it's called "Milk & cholocate in shopping list", which checks just that.
+- After the description of the test comes the anonomys function of the test
+- `render(<InputPresenter/>)` renders the InputPresenter our environment.
+- `screen.getByText("Milk")` is a function to find non-interactive elements with the specific text. Such elements could be divs and spans.
+- `expect(elem1).toBeInTheDocument()` checks if the element is in DOM Tree.
