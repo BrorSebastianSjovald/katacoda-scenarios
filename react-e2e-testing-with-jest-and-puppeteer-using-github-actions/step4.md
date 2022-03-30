@@ -21,7 +21,7 @@ Let first write a simple test which tests if the page simply has the text "Shopp
 
 As you can see, there is already a test here. It basically tests that the header "Shopping list" exists in your localhost 3000 as shown before. Lets add one more test!
 
-<pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="insert"  data-marker="#TODO-E2E test">
+<pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="append">
 test("Default shopping list is correct", () => {
   render(<InputPresenter />);
   const elem1 = screen.getByText("Milk");
