@@ -23,9 +23,26 @@ Lets start by open our new testing file: Open `./react-e2e-testing/src/index.pup
 import { render, screen } from "@testing-library/react";
 import { InputPresenter } from "./presenters/InputPresenter";
 const puppeteer = require("puppeteer");
+const URL = "http://localhost:3002/";
 
 #E2E-test1
 
 #E2E-test2
 
+</pre>
+
+Now let's add our first E2E test!
+
+<pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="insert"  data-marker="#E2E-test1">
+
+describe("First site", () => {
+it(" Milk is in list", async () => {
+const browser = await puppeteer.launch({ headless: false });
+const page = await browser.newPage();
+await page.goto(URL, { waitUntil: "domcontentloaded" });
+const text = await page.evaluate(() => document.body.textContent);
+expect(text).toContain("Milk");
+expect(text).toContain("Chocolate");
+});
+});
 </pre>
