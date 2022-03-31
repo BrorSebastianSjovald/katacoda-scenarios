@@ -48,7 +48,7 @@ describe("First site", () => {
 });
 </pre>
 
-Now, open a new terminal! Open `cd ./react-e2e-testing/src/`{{execute T2}} .Now Open `./react-e2e-testing/src/index.puppeteer.test.js`{{open}}. Before we run our tests, lets install all necessary stuff needed!
+Now, open a new terminal! Open `cd ./react-e2e-testing/src/`{{execute T2}} .Now Open `cd react-e2e-testing/`{{execute T2}} Before we run our tests, lets install all necessary stuff needed!
 Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute T2}} , make sure your localhost:3000 is active!
 
 Now, lets run `npm test`{{execute}} and see what happens!
