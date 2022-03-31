@@ -23,11 +23,9 @@ Lets start by open our new testing file: Open `./react-e2e-testing/src/index.pup
 import { render, screen } from "@testing-library/react";
 import { InputPresenter } from "./presenters/InputPresenter";
 const puppeteer = require("puppeteer");
-const URL = "http://localhost:3002/";
+const URL = "http://localhost:3000/";
 
 #E2E-test1
-
-#E2E-test2
 
 </pre>
 
@@ -50,7 +48,9 @@ describe("First site", () => {
 });
 </pre>
 
-Now, open a new terminal an go to Open `./react-e2e-testing/src/`{{open}}. Lets run `npm test`{{execute}} and see what happens!
+Now, open a new terminal an go to Open `./react-e2e-testing/src/`{{open}}. Before we run our tests, lets install all necessary stuff needed!
+
+Lets run `npm test`{{execute}} and see what happens!
 Hopefully you paased your (first?) E2E test! Congratulations!
 
 Lets talk about the code..

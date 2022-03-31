@@ -23,7 +23,8 @@
       },
       {
         "title": "E2E testing with Puppeteer",
-        "text": "step5.md"
+        "text": "step5.md",
+        "code": "e2einstall.sh"
       },
       {
         "title": "Automation with GitHub Actions",
