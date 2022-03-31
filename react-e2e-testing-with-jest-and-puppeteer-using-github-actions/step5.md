@@ -36,13 +36,16 @@ Now let's add our first E2E test!
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="insert"  data-marker="#E2E-test1">
 
 describe("First site", () => {
-it(" Milk is in list", async () => {
-const browser = await puppeteer.launch({ headless: false });
-const page = await browser.newPage();
-await page.goto(URL, { waitUntil: "domcontentloaded" });
-const text = await page.evaluate(() => document.body.textContent);
-expect(text).toContain("Milk");
-expect(text).toContain("Chocolate");
-});
+  it(" Milk is in list", async () => {
+    const browser = await puppeteer.launch({
+      headless: false,
+      args: ["--no-sandbox"],
+    });
+    const page = await browser.newPage();
+    await page.goto(URL, { waitUntil: "domcontentloaded" });
+    const text = await page.evaluate(() => document.body.textContent);
+    expect(text).toContain("Milk");
+    expect(text).toContain("Chocolate");
+  });
 });
 </pre>
