@@ -38,7 +38,7 @@ Now let's add our first E2E test!
 describe("First site", () => {
   it(" Milk is in list", async () => {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: ["--no-sandbox"],
     });
     const page = await browser.newPage();
@@ -49,3 +49,22 @@ describe("First site", () => {
   });
 });
 </pre>
+
+Now, open a new terminal an go to Open `./react-e2e-testing/src/`{{open}}. Lets run `npm test`{{execute}} and see what happens!
+Hopefully you paased your (first?) E2E test! Congratulations!
+
+Lets talk about the code..
+
+- **describe** : Describe creates a block where we can group tests that are related.
+- **it**: This is just and alias of **test** which we talked about before.
+- **puppeteer.launch(..)**: Puppeter launches Chromium (Chrome).
+
+  - **headless: true, args: ["--no.sandbox"]**: headless: true means that puppeteer uses no graphical user interface in this test. "No sandbox" is a security flag for websites.
+
+- **.newPage()** creates a new page object. Page is created in a default browser context.
+
+- **page.goto(URL)** Navigates to the given URL.
+
+- **page.evaluate()** A page-funcation that evaluates the context in the actual page.
+
+- **expect(text).toContain("Milk")** - expect is a Jest-function which gives you access of "matchers". In this case, we want a text to contain the word "Milk".
