@@ -19,7 +19,7 @@ Lets start by open our new testing file: Open `./react-e2e-testing/src/index.pup
 
 **Cool!**, now lets add a code-skeleton
 
-<pre class="file" data-filename="/root/travis-react-tutorial/src/App.test.js" data-target="replace">
+<pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="replace">
 import { render, screen } from "@testing-library/react";
 import { InputPresenter } from "./presenters/InputPresenter";
 const puppeteer = require("puppeteer");
