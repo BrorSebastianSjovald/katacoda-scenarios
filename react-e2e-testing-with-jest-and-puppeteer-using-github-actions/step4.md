@@ -9,10 +9,15 @@ Normally, the complexity of an application is much more advanced than in this ex
 // Brors kod här nere
 `git clone https://github.com/lucianozapata/react-e2e-testing`{{execute}}
 
-If you yet haven't installed & run the application, do so by firstly run `cd react-e2e-testing/`{{execute}}
-and then `npm install`{{execute}} . Then, open a new terminal `echo open new terminal 2`{{execute T2}} followed by `cd react-e2e-testing/src/`{{execute T2}} and `npm start`{{execute T2}}.
-This will run the application in your localhost on port 3000. Press the "Display port 3000" in the terminal to see the app!
-//Brors kod här uppe
+If you yet haven't installed & run the application, follow these steps:
+
+- `cd react-e2e-testing/`{{execute}} , enter the correct folder.
+- `npm install`{{execute}} . install all dependencies.
+- `echo open new terminal 2`{{execute T2}} open a new terminal
+- `cd react-e2e-testing/src/`{{execute T2}} enter the right folder in the new terminal
+- `npm start`{{execute T2}}. run your application.
+  This will run the application in your localhost on port 3000. Press the "Display port 3000" in the terminal to see the app!
+  //Brors kod här uppe
 
 ### Our first tests for the application
 
@@ -44,5 +49,6 @@ Cool! Now we have two basic tests for our application. Lets try and see if they 
 Run `cd react-e2e-testing/src/`{{execute T3}} followed by `npm test`{{execute T3}} and see the results!
 
 If everything has done correctly you should be seeing a `Tests: 2 passed, 2 total` in you terminal. Amazing! You've now confirmed that the those tests works in your local environment!
+Press **q** to exit the test results.
 
 **Can we now make sure that our application works if we would host this on the web? What you think?**
