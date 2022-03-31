@@ -49,9 +49,10 @@ describe("First site", () => {
 </pre>
 
 Now, open a new terminal an go to Open `./react-e2e-testing/src/`{{open}}. Before we run our tests, lets install all necessary stuff needed!
+Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute}} , make sure your localhost:3000 is active!
 
-Lets run `npm test`{{execute}} and see what happens!
-Hopefully you paased your (first?) E2E test! Congratulations!
+Now, lets run `npm test`{{execute}} and see what happens!
+Hopefully you passed your (first?) E2E test! Congratulations!
 
 Lets talk about the code..
 
