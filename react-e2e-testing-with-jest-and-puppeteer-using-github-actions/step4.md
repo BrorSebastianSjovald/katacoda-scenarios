@@ -10,7 +10,7 @@ Normally, the complexity of an application is much more advanced than in this ex
 `git clone https://github.com/lucianozapata/react-e2e-testing`{{execute}}
 
 If you yet haven't installed & run the application, do so by firstly run `cd react-e2e-testing/`{{execute}}
-and then `npm install`{{execute}} followed by `npm start`{{execute}}.
+and then `npm install`{{execute}} followed by `npm start`{{execute T2}}.
 This will run the application in your localhost on port 3000. Press the "Display port 3000" in the terminal to see the app!
 //Brors kod här uppe
 
@@ -41,7 +41,7 @@ Let's analyze this.
 ### Run the tests locally
 
 Cool! Now we have two basic tests for our application. Lets try and see if they pass!
-Run `cd react-e2e-testing/src/`{{execute T2}} followed by `npm test`{{execute T2}} and see the results!
+Run `cd react-e2e-testing/src/`{{execute T3}} followed by `npm test`{{execute T3}} and see the results!
 
 If everything has done correctly you should be seeing a `Tests: 2 passed, 2 total` in you terminal. Amazing! You've now confirmed that the those tests works in your local environment!
 
