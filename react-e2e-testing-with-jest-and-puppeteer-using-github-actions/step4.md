@@ -41,7 +41,7 @@ Let's analyze this.
 ### Run the tests locally
 
 Cool! Now we have two basic tests for our application. Lets try and see if they pass!
-Run `npm test`{{execute}} and see the results!
+Run `npm test`{{execute T2}} and see the results!
 
 If everything has done correctly you should be seeing a `Tests: 2 passed, 2 total` in you terminal. Amazing! You've now confirmed that the those tests works in your local environment!
 
