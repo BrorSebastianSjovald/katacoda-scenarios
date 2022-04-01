@@ -1,11 +1,5 @@
 # Testing in React
 
-Now it's time to make make our first E2E test in React! Woho!
-
-Like metioned before in this tutorial, the main purpose of E2E tests is to test the **functionality and performance** of an application under product-like circumstances. The main goal is to as much as possible, simulate what a potential user scenario would look like from the start to finish.  
-What is importante to mention as well is that there is a difference between having a system that **works** and having a system that behaves as it should.
-Normally, the complexity of an application is much more advanced than in this example. E2E tests usually test that all the parts in an applications works as intended, which could include how backend, databases and frontend works all together.
-
 // Brors kod här nere
 `git clone https://github.com/lucianozapata/react-e2e-testing`{{execute}}
 
@@ -49,6 +43,7 @@ Cool! Now we have two basic tests for our application. Lets try and see if they 
 Run `cd react-e2e-testing/src/`{{execute T3}} followed by `npm test`{{execute T3}} and see the results!
 
 If everything has done correctly you should be seeing a `Tests: 2 passed, 2 total` in you terminal. Amazing! You've now confirmed that the those tests works in your local environment!
+
 Press **q** to exit the test results.
 
 **Can we now make sure that our application works if we would host this on the web? What you think?**
