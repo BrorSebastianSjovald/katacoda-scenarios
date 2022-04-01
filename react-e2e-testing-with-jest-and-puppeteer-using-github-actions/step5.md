@@ -1,7 +1,12 @@
 ## E2E testing
 
-It is perhaps easy to believe that because our application works purely code-wise in our local environment, that everything is peace and joy. However, a small part is missing for a complete testcoverage, which is how the application works in practice, ie when a user actually uses the application. It is very possible that things may appear here that are not completely covered by previous tests.
+It is perhaps easy to believe that because our application works purely code-wise in our immediate environment, that everything is peace and joy. However, we can probably not really be sure that our application works perfectly if a user would use it.
+It is very possible that problems may arise that we do not really cover with our two previous tests.
+
 **This is where E2E tests come in handy!**
+
+Like metioned before in this tutorial, the main purpose of E2E tests is to test the **functionality and performance** of an application under product-like circumstances. The main goal is to as much as possible, simulate what a potential user scenario would look like from the start to finish.  
+What is importante to mention as well is that there is a difference between having a system that **works** and having a system that behaves as it should.
 
 So, to be able to test user flows within a web-application such as ours, we need to run our application on a webbrowser. For this, we will be using **Puppeteer**, a Node library which provides a high-level API to control Chrome over the DevTools protocol.
 
