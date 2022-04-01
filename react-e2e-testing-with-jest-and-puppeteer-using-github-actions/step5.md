@@ -22,7 +22,7 @@ I think the easiest way to explain how Puppeteer works is by showing. So let's g
 
 Lets start by open our new testing file: Open `./react-e2e-testing/src/index.puppeteer.test.js`{{open}}
 
-**Cool!**, now lets add a code-skeleton
+**Cool!**, now lets add a skeleton.
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="replace">
 import { render, screen } from "@testing-library/react";
@@ -36,7 +36,7 @@ const URL = "http://localhost:3000/";
 
 </pre>
 
-Now let's add our first E2E test!
+Now let's add two E2E tests!
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="insert"  data-marker="#E2E-test1">
 
@@ -55,7 +55,7 @@ describe("First site", () => {
 });
 </pre>
 
-Lets add a second one as well!
+and:
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="insert"  data-marker="#E2E-test2">
 
@@ -83,6 +83,8 @@ Hopefully you passed your (first?) E2E test! Congratulations!
 
 Lets talk about the code..
 
+Our first E2E test:
+
 - **describe** : Describe creates a block where we can group tests that are related.
 - **it**: This is just and alias of **test** which we talked about before.
 - **puppeteer.launch(..)**: Puppeter launches Chromium (Chrome).
@@ -96,3 +98,9 @@ Lets talk about the code..
 - **page.evaluate()** A page-funcation that evaluates the context in the actual page.
 
 - **expect(text).toContain("Milk")** - expect is a Jest-function which gives you access of "matchers". In this case, we want a text to contain the word "Milk".
+
+Our second E2E test is a bit different. In this test, we add a new element to the Shopping list and then checks that it actually appears on the screen. Lets talk about the code..
+
+- **waitForSelector("input[name=inputDiv]")** waits for the input with name = "inputDiv" appears on the page.
+- **type("#katacodaid", "Eggs")** Types the text "Eggs" into the input with id="katacodaid", which is the input for our shopping list.- **click("#clickbutton")** Clicks the button which adds the element in the input to the list.
+- **expect(..)** - last step checks if "Eggs" now is added to the list.
