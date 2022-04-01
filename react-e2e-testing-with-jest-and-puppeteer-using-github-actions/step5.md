@@ -27,6 +27,8 @@ const URL = "http://localhost:3000/";
 
 #E2E-test1
 
+#E2E-test2
+
 </pre>
 
 Now let's add our first E2E test!
@@ -46,6 +48,26 @@ describe("First site", () => {
     expect(text).toContain("Chocolate");
   });
 });
+</pre>
+
+Lets add a second one as well!
+
+<pre class="file" data-filename="/root/react-e2e-testing/src/index.puppeteer.test.js" data-target="insert"  data-marker="#E2E-test2">
+
+it("Add an element in shopping List", async () => {
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox"],
+    });
+    const page = await browser.newPage();
+    await page.goto(URL, { waitUntil: "domcontentloaded" });
+    await page.waitForSelector("input[name=inputDiv]");
+    await page.type("#katacodaid", "Eggs");
+    await page.click("#clickbutton");
+    const text = await page.evaluate(() => document.body.textContent);
+
+    expect(text).toContain("Eggs");
+  });
 </pre>
 
 Now, open a new terminal! Open `cd ./react-e2e-testing/src/`{{execute T3}} .Now Open `cd react-e2e-testing/`{{execute T3}} Before we run our tests, lets install all necessary stuff needed!
