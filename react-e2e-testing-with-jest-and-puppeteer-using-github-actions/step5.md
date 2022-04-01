@@ -83,7 +83,7 @@ Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute T3}}
 Now, lets run `npm test`{{execute}} and see what happens!
 Hopefully you passed your (first?) E2E test! Congratulations!
 
-Lets talk about the code..
+## Lets talk about the code..
 
 Our first E2E test:
 
@@ -101,7 +101,7 @@ Our first E2E test:
 
 - **expect(text).toContain("Milk")** - expect is a Jest-function which gives you access of "matchers". In this case, we want a text to contain the word "Milk".
 
-Our second E2E test is a bit different. In this test, we add a new element to the Shopping list and then checks that it actually appears on the screen. Lets talk about the code..
+Our second E2E test is a bit different. In this test, we add a new element to the Shopping list and then checks that it actually appears on the screen. Lets go through the new methods.
 
 - **waitForSelector("input[name=inputDiv]")** waits for the input with name = "inputDiv" appears on the page.
 - **type("#katacodaid", "Eggs")** Types the text "Eggs" into the input with id="katacodaid", which is the input for our shopping list.- **click("#clickbutton")** Clicks the button which adds the element in the input to the list.
