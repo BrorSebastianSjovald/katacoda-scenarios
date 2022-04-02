@@ -24,7 +24,7 @@ Lets add a new test to our test-file!
 
 <pre class="file" data-filename="/root/react-e2e-testing/src/index.test.js" data-target="append">
 test("Milk & chocolate in shopping list", () => {
-  render(<`InputPresenter` />);
+  render(<InputPresenter />);
   const elem1 = screen.getByText("Milk");
   const elem2 = screen.getByText("Chocolate");
   expect(elem1).toBeInTheDocument();
