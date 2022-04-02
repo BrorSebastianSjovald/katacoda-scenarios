@@ -32,7 +32,7 @@ const URL = "http://localhost:3000/";
 
 #E2E-test1
 
-#E2E-test2
+
 
 </pre>
 
@@ -52,6 +52,9 @@ describe("First site", () => {
     expect(text).toContain("Milk");
     expect(text).toContain("Chocolate");
   });
+
+  #E2E-test2
+  
 });
 </pre>
 
