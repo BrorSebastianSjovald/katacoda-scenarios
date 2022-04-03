@@ -1,6 +1,8 @@
-## 
+##
 
 ## What you will learn:
+
+- The importance of covering all types of testing
 
 - Write end-to-end tests
 
@@ -8,9 +10,7 @@
 
 - Why end-to-end testing and automating is good for DevOps
 
-
 ## Why is end-to-end(e2e) testing important?
-
 
 ## The plan:
 
@@ -26,3 +26,4 @@
 
 6. Automation with GitHub Actions
 
+7. Try it yourself & Take away
