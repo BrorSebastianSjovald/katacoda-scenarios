@@ -114,5 +114,7 @@ Our second E2E test is a bit different. In this test, we add a new element to th
 - **type("#katacodaid", "Eggs")** Types the text "Eggs" into the input with id="katacodaid", which is the input for our shopping list.- **click("#clickbutton")** Clicks the button which adds the element in the input to the list.
 - **expect(..)** - last step checks if "Eggs" now is added to the list.
 
+## What's next?
+
 Nice!
 What would it be like if we always made sure that our app fulfills these functions in the future? Can we somehow make sure that we always test this while building on our application?
