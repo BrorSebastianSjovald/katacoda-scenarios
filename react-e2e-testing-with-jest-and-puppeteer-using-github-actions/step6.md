@@ -96,9 +96,7 @@ Well, depending on the configuration in the _.yml file_, we can make Github info
 
 Here under are some pictures on where to navigate to get to the Github Actions feature on Github, and see how a commit is pushed to the code and goes through the workflow. The last picture shows when Github actions returned that all tests had passed.
 
-<pre>
 ![pic1](./assets/1.png)
-</pre>
 
 <iframe src="https://drive.google.com/file/d/1OViCNnuMXO5XWam26ZWmTdfMfVARQuEg/view?usp=sharing" width="640" height="480"></iframe>
 
