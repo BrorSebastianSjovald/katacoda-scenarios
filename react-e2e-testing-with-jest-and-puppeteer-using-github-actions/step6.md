@@ -97,13 +97,17 @@ Well, depending on the configuration in the _.yml file_, we can make Github info
 Here under are some pictures on where to navigate to get to the Github Actions feature on Github, and see how a commit is pushed to the code and goes through the workflow. The last picture shows when Github actions returned that all tests had passed.
 
 ![pic1](./assets/1.png)
+
 Picture showing where to find "Actions" feature in Github.
 
 ![pic2](./assets/2.png)
+
 A commit with the name "Added a easter egg on this repo ;)" was pushed into the main branch and is going through the workflow. Yellow color means it's still processing.
 
 ![pic3](./assets/3.png)
+
 If you click on the commit from the previous picture, you can see the workflow live. In this picture, the Job **Build(12.x)** is currently running the command _npm ci_.
+
 ![pic4](./assets/4.png)
 Here the Job is running _npm start & npm test_ which basically means it's running our E2E tests!
 

@@ -29,6 +29,10 @@
       {
         "title": "Automation with GitHub Actions",
         "text": "step6.md"
+      },
+      {
+        "title": "Do it yourself!",
+        "text": "step7.md"
       }
     ],
     "intro": {
