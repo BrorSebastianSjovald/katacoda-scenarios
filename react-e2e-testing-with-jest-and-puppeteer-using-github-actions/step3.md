@@ -10,5 +10,5 @@ To make it simple we will have two main use cases:
 
 2. You should be able to remove items in the list by pressing a button on the item.
 
-By having these two simple use cases we can then start implementing the  E2E tests.
+By having these two simple use cases we can then start implementing the E2E tests.
 
