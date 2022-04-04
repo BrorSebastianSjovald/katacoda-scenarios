@@ -11,7 +11,7 @@ In order to run the application we first need to install all of its dependencies
 
 When all modules have been successfully downloaded, the app can be started by running the `npm start`{{execute}} command. 
 
-We can know view the app by going to the url: https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/
+We can know view the app by going to the url: https://[[HOST_SUBDOMAIN]]-3000-[[KATACODA_HOST]].environments.katacoda.com/ or press the `Display port 3000` tab in the terminal.
 
 
 ## Functionality
