@@ -30,4 +30,4 @@ The app was initialized using the command `npx create-react-app` which generates
 
 The structure in the `src/` folder is initially flat with all files in the same folder. In order to gain more structure to the project, it has been refactored to use the Model-View-Presenter(MVP) design pattern.
 
-
+As the model for this app is very simple (a single array of TODOs) we have implemented the model directly into the presenter as a React state. You can open the presenter by pressing here `./react-e2e-testing/src/presenters/InputPresenter.js`{{open}}.
