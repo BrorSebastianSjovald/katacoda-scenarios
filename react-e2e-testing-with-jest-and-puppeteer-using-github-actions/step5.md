@@ -20,7 +20,7 @@ That might be loads of new words.. Let's be more concrete :)
 
 I think the easiest way to explain how Puppeteer works is by showing. So let's get into it!
 
-Lets start by open our new testing file: Open `~/react-e2e-testing/src/index.puppeteer.test.js`{{open}}
+Lets start by open our new testing file: Open `./react-e2e-testing/src/index.puppeteer.test.js`{{open}}
 
 **Cool!**, now lets add a skeleton.
 
@@ -82,7 +82,7 @@ and:
   }, 40000);
 </pre>
 
-Now open `cd ~/react-e2e-testing/`{{execute interrupt T2}} .  
+Now open `cd root/react-e2e-testing/`{{execute interrupt T2}} .  
 Before we run our tests, lets install all necessary stuff needed!
 Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute T2}} , make sure your localhost:3000 is active! If you are unsure if it is running, you can run this command: `npm start`{{execute interrupt T1}}.
 
