@@ -82,10 +82,9 @@ and:
   }, 40000);
 </pre>
 
-Now, open a new terminal! Open `cd ./react-e2e-testing/src/`{{execute T3}} .  
-Now Open `cd react-e2e-testing/`{{execute T3}} .  
+Now Open `cd react-e2e-testing/`{{execute interrupt T2}} .  
 Before we run our tests, lets install all necessary stuff needed!
-Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute T3}} , make sure your localhost:3000 is active!
+Lets start by running `sudo apt-get install -y libxkbcommon-x11-0`{{execute T2}} , make sure your localhost:3000 is active `npm start`{{execute interrupt T1}}!
 
 Now, lets run `npm test`{{execute}} and see what happens!
 Hopefully you passed your (first?) E2E test! Congratulations!
