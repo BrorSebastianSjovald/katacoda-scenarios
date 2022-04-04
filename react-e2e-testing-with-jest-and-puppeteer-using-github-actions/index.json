@@ -7,12 +7,12 @@
     "steps": [
       {
         "title": "Introduction to testing",
-        "text": "step1.md",
-        "courseData": "goToFolder.sh"
+        "text": "step1.md"
       },
       {
         "title": "Getting to know the app",
-        "text": "step2.md"
+        "text": "step2.md",
+        "courseData": "goToFolder.sh"
       },
       {
         "title": "The required functionality",
