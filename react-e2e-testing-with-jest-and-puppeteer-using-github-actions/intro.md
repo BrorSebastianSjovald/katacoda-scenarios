@@ -1,5 +1,3 @@
-##
-
 ## What you will learn:
 
 - The importance of covering all types of testing
@@ -11,6 +9,8 @@
 - Why end-to-end testing and automating is good for DevOps
 
 ## Why is end-to-end(e2e) testing important?
+
+End to end testing is the practice of verifying that the application under test performs as expected under near "live" settings. By performing such tests all parties involved can be confident that the application will do what it is supposed to do in production.
 
 ## The plan:
 
