@@ -1,18 +1,3 @@
-# Testing in React
-
-// Brors kod här nere
-`git clone https://github.com/lucianozapata/react-e2e-testing`{{execute}}
-
-If you yet haven't installed & run the application, follow these steps:
-
-- `cd react-e2e-testing/`{{execute}} , enter the correct folder.
-- `npm install`{{execute}} . install all dependencies.
-- `echo open new terminal 2`{{execute T2}} open a new terminal
-- `cd react-e2e-testing/src/`{{execute T2}} enter the right folder in the new terminal
-- `npm start`{{execute T2}}. run your application.
-  This will run the application in your localhost on port 3000. Press the "Display port 3000" in the terminal to see the app!
-  //Brors kod här uppe
-
 ### Our first tests for the application
 
 We will now try to write our first React test for our TODO app!
