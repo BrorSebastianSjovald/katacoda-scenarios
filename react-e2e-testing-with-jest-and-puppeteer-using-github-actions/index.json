@@ -12,7 +12,7 @@
       {
         "title": "Getting to know the app",
         "text": "step2.md",
-        "courseData": "goToFolder.sh"
+        "code": "goToFolder.sh"
       },
       {
         "title": "The required functionality",
