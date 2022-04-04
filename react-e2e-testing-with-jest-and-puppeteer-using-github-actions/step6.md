@@ -6,7 +6,7 @@ Well, we can do that with the help of **Github Actions!** Github actions is a co
 
 ## Why do we want to use Github Actions?
 
-CI can save a lot of time due to its automation. By having a functioning, automated and stable pipeline, teams can save a lot of time by focusing on the important thing instead: developing a good product. Depending on how you use Github actions, you can by combining it with CI mergea code between different teams without creating major conflicts and be sure that everything works as intended.
+CI can save a lot of time due to its automation. By having a functioning, automated and stable pipeline, teams can save a lot of time by focusing on the important thing instead: developing a good product. Depending on how you use Github actions, you can by combining it with CI merge code between different teams without creating major conflicts and be sure that everything works as intended.
 
 ## How do we use Github Actions workflow in our app?
 
@@ -48,42 +48,42 @@ If we now commit this change to our Github Repository, we have the setup ready t
 
 We will now to through th _.yml_-file briefly, to get a better understanding of what this file actually does.
 
-**name: Node.js CI -**
+### **name: Node.js CI -**
 
 _Optional:_ The name of the workflow as it will appear in the Actions tab of the GitHub repository.
 
-**on:**
+### **on:**
 
 Specifies the trigger for this workflow. This example uses the `push` & `pull_request` event, so a workflow run is triggered every time someone pushes a change to the repository or merges a pull request on the specified branch (**main** in our case)
 
-**Jobs:**
+### **jobs:**
 
 Groups together all jobs run in our workflow.
 
-**Build:**
+### **build:**
 Name of our job. The child keys will define the properties of the job.
 
-**Runs on: ubuntu-latests**
+### **runs on: ubuntu-latests**
 
 Configures the job to be run on the latest ubuntu linux runner. This job will be run on a virtual machine hosted by Github.
 
-**Strategy:**
+### **strategy:**
 
 This defines a build matrix for all of our jobs. Here we can specify if we want our jobs to be run with different configurations. In our case, we run it with 3 different node versions, 12.x, 14.x and 16.x.
 
-**steps:**
+### **steps:**
 
 Groups together all the steps that run in the **build** job.
 
-**uses: actions/checkout@v2**
+### **uses: actions/checkout@v2**
 
 This is an action that checks out our repository onto the runner, allowing us to run scripts & other actions against our code. We will in our case use this to run our tests.
 
-**uses: actions/setup-node@v2**
+### **uses: actions/setup-node@v2**
 
 This step uses the actions/setup-node@v2 to install the specified node version we want, which in our case the ones defined in the matrix explained before.
 
-**Run:**
+### **run:**
 
 The run keywords tells the job to execute the command on the runner. This is where we run **npm start & npm test** just as we did in our local environment.
 
@@ -92,7 +92,7 @@ The run keywords tells the job to execute the command on the runner. This is whe
 That’s a lot of information! But it’s really not that complicated! By configuring this _.yml file_ as we want it to behave, we really make life easier for developers working on this repository.
 
 _How do we get feedback if our tests actually passes or not ?_ - you may ask.  
-Well, depending on the configuration in the _.yml file_, we can make Github inform us as soon as we push code into the repository. In our case, we let Github inform us as soon as we push or make a Pull_request on the main-branch.
+Well, depending on the configuration in the _.yml file_, we can make Github inform us as soon as we push code into the repository. In our case, we let Github inform us as soon as we push or make a `pull_request` on the `main`-branch.
 
 Here under are some pictures on where to navigate to get to the Github Actions feature on Github, and see how a commit is pushed to the code and goes through the workflow. The last picture shows when Github actions returned that all tests had passed.
 
@@ -106,7 +106,7 @@ A commit with the name "Added a easter egg on this repo ;)" was pushed into the 
 
 ![pic3](./assets/3.png)
 
-If you click on the commit from the previous picture, you can see the workflow live. In this picture, the Job **Build(12.x)** is currently running the command _npm ci_.
+If you click on the commit from the previous picture, you can see the workflow live. In this picture, the Job **build(12.x)** is currently running the command _npm ci_.
 
 ![pic4](./assets/4.png)
 Here the Job is running _npm start & npm test_ which basically means it's running our E2E tests!
