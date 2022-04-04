@@ -25,5 +25,3 @@ End to end testing is the practice of verifying that the application under test 
 5. E2E testing with Puppeteer
 
 6. Automation with GitHub Actions
-
-7. Try it yourself & Take away
