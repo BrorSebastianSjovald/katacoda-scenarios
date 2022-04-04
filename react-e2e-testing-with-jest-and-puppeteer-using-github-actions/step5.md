@@ -20,7 +20,7 @@ That might be loads of new words.. Let's be more concrete :)
 
 I think the easiest way to explain how Puppeteer works is by showing. So let's get into it!
 
-Lets start by open our new testing file: Open `root/react-e2e-testing/src/index.puppeteer.test.js`{{open}}
+Lets start by open our new testing file: Open `./react-e2e-testing/src/index.puppeteer.test.js`{{open}}
 
 **Cool!**, now lets add a skeleton.
 
