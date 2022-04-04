@@ -2,7 +2,7 @@
   "title": "E2E testing in React using Jest and Puppeteer",
   "description": "Learn how to perform E2E tests in React with Jest and Puppeteer",
   "difficulty": "Intermediate",
-  "time": "3 minutes",
+  "time": "5-10 minutes",
   "details": {
     "steps": [
       {
@@ -30,10 +30,6 @@
       {
         "title": "Automation with GitHub Actions",
         "text": "step6.md"
-      },
-      {
-        "title": "Do it yourself & take away",
-        "text": "step7.md"
       }
     ],
     "intro": {
@@ -41,13 +37,14 @@
       "courseData": "initialize.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "step7.md"
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
     "dashboards": [{ "name": "Display port 3000", "port": 3000 }],
-    "showdashboard": true
+    "showdashboard": true,
+    "hideHiddenFiles": true
   },
   "backend": {
     "imageid": "ubuntu:2004"
